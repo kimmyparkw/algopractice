@@ -2,7 +2,6 @@
 
 const nodeDepths = (root) => {
     let total = 0
-
     const nodeDepthsHelper = (currentNode, depth) => {
         //depth keeps track of distance from root node
         //base case
@@ -20,7 +19,6 @@ const nodeDepths = (root) => {
         nodeDepthsHelper(currentNode.left, depth) //recursion for left node
         nodeDepthsHelper(currentNode.right, depth) //recursion for right node
     }
-
     nodeDepthsHelper(root, 0)
     return total
 }
