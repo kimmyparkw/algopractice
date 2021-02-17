@@ -28,7 +28,7 @@ const findClosestValueInBst = (tree, target) => {
 // if the current node was assign in the loop, if would have to execute the logic each time (i.e.- the recursive solution)
 
 const findClosestValueInBst = (tree, target) => {
-    const findClosestValueHelper(tree, target, closest) => {
+    const findClosestValueHelper = (tree, target, closest) => {
         let currentNode = tree
 
         while (currentNode) {
