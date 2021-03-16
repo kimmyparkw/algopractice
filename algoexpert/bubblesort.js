@@ -14,3 +14,28 @@ const bubbleSort = (array) => {
     }
     return array
 }
+
+
+//the way it is written in algoexpert
+function bubbleSort(array) {
+    // Write your code here.
+      let isSorted = false
+      let counter = 0
+      console.log('opposite of false is true', !isSorted)
+      console.log('compares true === true', !isSorted === (isSorted === false))
+      while (!isSorted) {
+          isSorted = true
+          for(let i = 0; i < array.length-1 - counter; i++) {
+              let a = array[i]
+              let b = array[i + 1]
+              if(a > b) {
+                  array[i] = b
+                  array[i + 1] = a
+                  isSorted = false
+                  }
+              }
+          counter++
+      }
+      console.log(array)
+      return array
+  }
